@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
 	<style type="text/css">
     .cola,
     .colb,
@@ -30,11 +32,33 @@
     .carousel-inner>.item>img {
       margin: 0px auto;
     }
-    
+ 
+    #gallery {
+      margin: 30px;
+ }
+
+    .img-responsive  {
+      border-radius: 50px;
+      }
+
+    .Avenue {
+      border-radius: 25px;
+    }
+
     p {
       font-size: 30px;
     }
-    
+
+    #unique {
+      margin:50px 0px; border-radius: 25px; 
+
+    }    
+
+    #unique2 {
+      margin:15px 0px; border-radius: 25px;  
+
+    }   
+
     @media screen and (max-width: 900px) {
       p {
         font-size: 12px;
@@ -42,6 +66,7 @@
     }
   </style>
 </head>
+
 
 	<style>
 	body{
@@ -72,8 +97,8 @@
   					<li><a href="#gallery">Gallery</a> 
   					<li><a href="#features">Features</a> 
   					<li><a href="#faq">Faq</a> 
-  					<li><a href="#contact">ContactUs</a> 
-            <li><a href="#loginModal">Login</a> 
+  					<li><a href="#contact">Contact Us</a> 
+            <li><a href="#loginModal" data-toggle="modal" data-target"#loginModal">Login</a> 
   				</ul>
   			</div>
   		</div><!-- End Container-->
@@ -81,9 +106,9 @@
 
 <!-- modal event -->
 <!-- First here is the modal button in navbar pull right places it on right-->
-<button class="btn btn-primary btn sm pull-right" data-target="#loginModal" data-toggle="modal">Login</button>
+<!-- <button class="btn btn-primary btn-primary btn sm pull-right" data-target="#loginModal" data-toggle="modal">Login</button> -->
   <div  class="modal" id="loginModal" tabindex="-1">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header"> 
              <h4 class="modal-title">Login</h4>  
@@ -102,25 +127,28 @@
                       <label for="inputPassword">Password</label>
                       <input class="form-control" placeholder="Login Password" type="password" id="inputPassword" />
                   </div>
-                   <button type="submit" class="btn btn-default">Login</button> 
+                   <button type="submit" class="btn btn-prinmary">Login</button> 
+                   <button type="submit" class="btn btn-primary">Close</button>
               </form>
           </div>
         </div>
-        <div class="modal-footer"></div>
-          <Button class="btn btn-primary">Login</Button>
-          <Button class="btn btn-primary"data-dismiss="modal">Close</Button>
-          <!-- data function triggers dismissal -->
+       <!--  <div class="modal-footer"></div>
+          <Button class="btn btn-primary">Login</Button> -->
+          <!-- <Button class="btn btn-primary"data-dismiss="modal">Close</Button>
+          data function triggers dismissal - this is if you want a button outside of nav bar -->
       </div>
   </div>
 
-
 <!-- End modal event -->
+
+
 <!-- Gallery -->
   <div class="container">
     <section>
-      <div class="page-header" id="gallery">
-           <h2 style="text-align:center">GALLERY</h2>
-        </div>
+      <div page-header" id="gallery">
+          <h2 class=class="page-header"></h2> 
+           <h2 class="animated bounce"  style="text-align:center"></h2>
+        </div> 
 
         <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -132,7 +160,7 @@
 
           <div class="carousel-inner">
             <div class="item active">
-              <img src="img/bedstuymasterint22.jpg"" alt="Text of the image">
+              <img src="img/bedstuymasterint22.jpg" alt="Text of the image">
               <div class="carousel-caption">
                 <h3></h3>
                <!--  <p>This is the caption</p> -->
@@ -175,7 +203,7 @@
   	<div class="jumbotron">
   		<div class="container text-center">
   			<h1>Brownstone Magic</h1>
-  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur </p>
+  			<p>Bedford Stuyvesant has a flavor all of its own -- even moreso right now! </p>
 
   			<div class="btn-group">
   				<a href="" class="btn btn-lg btn-info">Download App</a>
@@ -189,25 +217,26 @@
   	<div class="container">
   		<section>
   			<div class="page-header" id="feedback">
-  				<h2>Feedback.<small> Check out the Awesome Feedback</small></h2>
+  				<h2>Feedback.<small> Real Talk from Real People</small></h2>
   			</div>
 
   			<div class="row">
   				<div class="col-md-4">
   					<blockquote>
-  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+  						<p>
+            I wonder how long it's going to take for the area to be completely rezoned and the families living in the 21 housing projects in the area to be pushed out? It's very sad, but that's what happens when an area is discovered by the real estate sharks and the yuppies with their wherewithal start contacting their government officials to change things. </p>
   						<footer>John doe</footer>
   					</blockquote>
   				</div>
   				<div class="col-md-4">
   					<blockquote>
-  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+  						<p>The most gentrified community in Brooklyn and Spike Lee predicted it﻿.</p>
   						<footer>John doe</footer>
   					</blockquote>
   				</div>
   				<div class="col-md-4">
   					<blockquote>
-  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida quam ac ante rutrum, in mollis ligula mattis. Integer nulla nisi, ullamcorper et posuere vel</p>
+  						<p>I grew up right around the corner from where that Biggie mural now is. That mural is on Throop Ave at the corner of Greene and I grew up one  block down on Lexington Ave (bet. Throop and Tompkins). We lived on Lex Ave from '83 - 2000. Bed-Stuy was HOME. The entire COMMUNITY (neighborhood) was home.</p>
   						<footer>John doe</footer>
   					</blockquote>
   				</div>
@@ -241,22 +270,69 @@
 		</div><!-- end well-->
 	</section><!-- Call to action -->
 
-
-
 		</section>
 	</div>
+
+<!-- Video -->
+
+<div class="container">
+    <section>
+<div class="row">
+          <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - Inconvenient Truth.</h3>
+                <!-- video { -->
+
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/yymdI2A3tVc?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - IT-2</h3>
+                <!-- video { -->
+
+             <iframe width="400" height="315" src="https://www.youtube.com/embed/mC38WHZvjkM?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - IT-3</h3>
+                <!-- video { -->
+
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/0Xq6JDUIYjY?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+<!-- End of Video -->
 
 <!-- features -->
 	<div class="container">
 		<section>
 			<div class="page-header" id="features">
-  				<h2>Features.<small> Some of the coolest Features of this app.</small></h2>
+  				<h2>Why Bed-Stuy?<small> What's so cool about Bed-Stuy?.</small></h2>
   			</div><!-- End Page Header -->
 
   			<div class="row">
   				<div class="col-sm-8">
-  					<h3>This is the heading</h3>
-  					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris tortor, eleifend sit amet fringilla ac, tincidunt id massa. Proin et odio mattis, venenatis lacus vel, faucibus elit</p>
+  					<h3>Where is Bed-Stuy</h3>
+  					<p>Bedford Stuyvesant, colloquially known as Bed–Stuy, is a neighborhood of 153,000 inhabitants in the north central portion of the New York City borough of Brooklyn. </p>
   				</div>
   				<div class="col-sm-4">
   					<img src="img/bedstuymasterint4.jpg" class="img-responsive" alt="image">
@@ -264,32 +340,33 @@
   			</div><!-- End row -->
   			<div class="row">
   				<div class="col-sm-8">
-  					<h3>This is the heading</h3>
-  					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris tortor, eleifend sit amet fringilla ac, tincidunt id massa. Proin et odio mattis, venenatis lacus vel, faucibus elit</p>
+  					<h3>More About Bed-Stuy Location</h3>
+  					<p>Bedford–Stuyvesant is bordered by Flushing Avenue to the north (bordering Williamsburg), Classon Avenue to the west (bordering Clinton Hill), Broadway to the east (bordering Bushwick), and Atlantic Avenue to the south (bordering Crown Heights and Brownsville). </p>
   				</div>
-  				<div class="col-sm-4">
+  				<div class="col-sm-4" id="unique">
   					<img src="img/bedstuymasterint5.jpg" class="img-responsive" alt="image">
   				</div>
   			</div>
   			<div class="row">
   				<div class="col-sm-8">
-  					<h3>This is the heading</h3>
-  					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris tortor, eleifend sit amet fringilla ac, tincidunt id massa. Proin et odio mattis, venenatis lacus vel, faucibus elit</p>
+  					<h3>History</h3>
+  					<p>For decades, it has been a cultural center for Brooklyn's African American population. Following the construction of the IND Fulton Street Line in 1936, African Americans left an overcrowded Harlem for greater housing availability in Bedford–Stuyvesant. From Bedford–Stuyvesant, African Americans have since moved into the surrounding areas of Brooklyn including Brownsville, and Fort Greene. Bedford–Stuyvesant has many historic brownstones developed by speculative developers for the expanding middle to upper middle class from the 1890s to the late 1910s.</p>
   				</div>
-  				<div class="col-sm-4">
+  				<div class="col-sm-4" id="unique2">
   					<img src="img/bedstuymasterbackyard.jpg" class="img-responsive" alt="image">
   				</div>
   			</div>
 
-  			<hr>
+  			<hr> 
 
   			<div class="row">
   				<div class="col-sm-4">
   					<div class="panel panel-default text-center">
   						<div class="panel-body">
-  							<span class="glyphicon glyphicon-ok"></span>
-  							<h4>This is the Heading</h4>
-  							<p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+  							<!-- <span class="glyphicon glyphicon-ok"></span> -->
+  							<h4>280 Jefferson Ave</h4>
+                <img class="Avenue" src="img/bedstuyfoyer.jpg" alt="Text of the image" style="width:500px;height:600px;">
+  							<h3>Adriane Brit resides on the parlor and ground floors.  We are not on the parlor floor.  Again we continue to experience the beauty of the exposed brick throughout the home.  In the living room to the front of the house) Adrian shared an interesting piece of information.  Her home and the homes to the right and left of her are identical.  The builders at that time (over 100 years ago), made a temporary door which allowed them to go back and forth through the homes while under construction.  Once completed, the doors were sealed.  By exposing the brick you can still see the beams used for the temporary opening.</h3>
   						</div>
   					</div>
   				</div>
@@ -297,23 +374,31 @@
   				<div class="col-sm-4">
   					<div class="panel panel-default text-center">
   						<div class="panel-body">
-  							<span class="glyphicon glyphicon-star"></span>
-  							<h4>This is the Heading</h4>
-  							<p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+  					<!-- 		<span class="glyphicon glyphicon-star"></span> -->
+  							<h4>33 Herkimer St</h4>
+                <img class="Avenue" src="img/bedstuymodfoyer.jpg" alt="Text of the image" style="width:500px;height:600px;">
+  							<h3> 
+                  Founded by Ivy N. Jones, Welancora is a contemporary art gallery located in a 19th century townhouse in Bedford-Stuyvesant.   The purpose of the gallery is to represent artists from around the world by placing their works with collectors, museums and corporations.  
+
+                Welancora’s exhibition program consists of approximately 6 shows per year featuring works by leading international artists including Aisha T. Bell, Sunok Chun, Maria Paz, Donovan Nelson and more.  
+
+                Welancora expands its reach through a network of collaborations and partnerships and organizations and corporations.</h3>
   						</div>
   					</div>
   				</div>
 
-  				<div class="col-sm-4">
+  			 	<div class="col-sm-4">
   					<div class="panel panel-default text-center">
   						<div class="panel-body">
-  							<span class="glyphicon glyphicon-play-circle"></span>
-  							<h4>This is the Heading</h4>
-  							<p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+  						<!-- 	<span class="glyphicon glyphicon-play-circle"></span> -->
+  							<h4>278 Jefferson Avenue</h4>
+                <img class="Avenue" src="img/bedstuymiddleint.jpg" alt="Text of the image" style="width:350px;height:600px;">
+  							<h3>
+                 Elander Williams and her two sons, Christian and Corey, last opened their home to us in 2013.  She has added several imaginative features that make her family living spaces even more comfortable, meaningful and beautiful.  As you walk from floor to floor, you will see that Elander has painstakingly taken the time to not only preserve history, but to link those common threads to the present.  She has created an extensive wall gallery of paintings of loved ones through the generations.  If you look closely you may recognize mothers facing daughtes in portraits hung on opposite walls along the stairways. </h3>
   						</div>
   					</div>
-  				</div>
-  			</div><!-- end row -->
+  				</div> 
+        </div><!-- end row -->
 
 		</section>
 	</div><!-- End Container -->
